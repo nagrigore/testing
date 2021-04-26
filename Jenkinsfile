@@ -3,12 +3,12 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     sh 'sudo pip3 install pytest'
+                     sh 'pip3 install pytest'
                  }
                  }
                  stage('Two') {
                  steps {
-                    sh 'sudo python3 -m pytest'
+                    sh 'python3 -m pytest'
                  }
                  }
          }
