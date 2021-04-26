@@ -1,3 +1,3 @@
 In order to run the test just run pytest it will auto discover all tests and will run them...
 
-![example workflow](https://github.com/nagrigore/testing//workflows/build.yml/badge.svg)
+![example workflow](https://github.com/nagrigore/testing/workflows/build/badge.svg)
