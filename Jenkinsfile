@@ -8,7 +8,7 @@ pipeline {
                  }
                  stage('Two') {
                  steps {
-                    sh 'python3 -m pytest'
+                    sh 'ls -la'
                  }
                  }
          }
