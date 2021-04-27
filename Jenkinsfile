@@ -1,6 +1,6 @@
 pipeline {
    agent { 
-       docker { image 'node:14-alpine' }
+       docker { image 'pytest' }
    }
    stages {
        stage('before') {
@@ -15,6 +15,7 @@ pipeline {
                        println("apple 1")
                        sleep(20 * Math.random())
                        println("apple 2")
+                       sh 'python3 -m pytest'
                    }
                }
                stage('banana') {
