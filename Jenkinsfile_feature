@@ -5,7 +5,7 @@ pipeline {
    stages {
        stage('before') {
            steps {
-               println("before")
+               println("bbefore")
            }
        }
        stage('para') {
@@ -36,7 +36,7 @@ pipeline {
        }
        stage('after') {
            steps {
-               println("after")
+               println("aafter")
            }
        }
    }
