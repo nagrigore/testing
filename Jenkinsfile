@@ -5,12 +5,15 @@ pipeline {
    stages {
        stage('before') {
            steps {
-               println("bbefore")
+               println("before")
            }
        }
        stage('para') {
            parallel {
                stage('apple') {
+                   when {
+                       branch 'main'
+            }
                    steps {
                        println("apple 1")
                        sleep(20 * Math.random())
@@ -19,6 +22,9 @@ pipeline {
                    }
                }
                stage('banana') {
+                   when {
+                       branch 'feature_x'
+            }
                    steps {
                        println("banana 1")
                        sleep(20 * Math.random())
@@ -36,7 +42,7 @@ pipeline {
        }
        stage('after') {
            steps {
-               println("aafter")
+               println("after")
            }
        }
    }
