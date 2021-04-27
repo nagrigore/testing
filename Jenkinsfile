@@ -23,7 +23,7 @@ pipeline {
                }
                stage('banana') {
                    when {
-                       branch 'development'
+                       branch 'feature_x'
             }
                    steps {
                        println("banana 1")
