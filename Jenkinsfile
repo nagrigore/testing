@@ -22,6 +22,7 @@ pipeline {
                         url: 'https://github.com/nagrigore/testing2.git'
                     }
                     sh 'ls -la'
+                    sh 'test -e Module2/testing2'
                 }
             }
          }
