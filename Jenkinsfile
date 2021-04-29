@@ -9,7 +9,7 @@ pipeline {
                         git branch: "main",
                         url: 'https://github.com/nagrigore/testing.git'
                     }
-                    sh 'python3 --version'
+                    sh 'ls -la Module1'
                 }
             }
 
