@@ -21,7 +21,7 @@ pipeline {
                         git branch: "main",
                         url: 'https://github.com/nagrigore/testing2.git'
                     }
-                    sh 'test -e testing2'
+                    sh 'ls -la'
                 }
             }
          }
